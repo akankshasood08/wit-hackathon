@@ -3,32 +3,36 @@ let therapists = {
             Name: "Dylan Nicholls",
             Phone: "0401 123 424",
             Email: "DylanNicholls@gmail.com",
-            Skills: "Online, In Person, Male, Addiction"
+            Skills: "Addiction",
+            Access: "Online, In Person"
         },
         {
             Name: "Mandy Halabi",
             Phone: "0426 203 126",
             Email: "MandyH@gmail.com",
-            Skills: "In Person, Female"
+            Skills: "Female",
+            Access: "In Person"
         },
         {
             Name: "Lila Juliette Pesa",
             Phone: "0421 594 217",
             Email: "LilaJP@gmail.com",
-            Skills: "Online, Female, Youth, Anxiety"
+            Skills: "Anxiety",
+            Access: "Online"
         },
         {
             Name: "Cathy Freeman",
             Phone: "0468 496 216",
             Email: "CFreeman@gmail.com",
-            Skills: "Online, In Person, Addiction"
+            Skills: "Addiction",
+            Access: "Online"
         },
     ],
 };
 
 for (let i of therapists.data) {
     let card = document.createElement("div");
-    card.classList.add("card", "i.Skills", "hide");
+    card.classList.add("card", i.Skills, "hide");
 
     let container = document.createElement("div");
     container.classList.add("container")
@@ -48,10 +52,15 @@ for (let i of therapists.data) {
     email.innerText = i.Email + '\n';
     container.appendChild(email);
 
-    let skills = document.createElement("Skills");
-    skills.classList.add("Skills");
-    skills.innerText = i.Skills.join;
-    container.appendChild(skills);
+    // let skills = document.createElement("Skills");
+    // skills.classList.add("Skills");
+    // skills.innerText = i.Skills + '\n';
+    // container.appendChild(skills);
+
+    let access = document.createElement("Access");
+    access.classList.add("Access");
+    access.innerText = i.Access;
+    container.appendChild(access);
 
     card.appendChild(container);
     document.getElementById("therapists").appendChild(card)
@@ -73,14 +82,16 @@ function filterSkills(value) {
     elements.forEach((element) => {
         if (value == "All") {
             element.classList.remove("hide");
-        } else {
+        } 
+        else {
             if(element.classList.contains(value)) {
+            // if (element.classList.toUpperCase().includes(value.toUpperCase())) {
                 element.classList.remove("hide");
             } else {
                 element.classList.add("hide");
             }
         }
-    })
+    });
 }
 
 window.onload = () => {
