@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+@import url('https://fonts.cdnfonts.com/css/playfair-display');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Questrial ";
+    background-color: #F6F6EE;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+#main {
+    width: 100%;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4vw;
+    width: 100%;
+    height: 15vh;
+}
+
+#nav #links {
+    display: flex;
+    gap: 20px;
+}
+
+#links a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 13px;
+    font-family: 'Playfair Display';
+}
+
+#nav h3 {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+#heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 40vh;
+}
+
+#heading h1 {
+    font-family: "Playfair Display";
+    font-size: 60px;
+}
+#heading p {
+    font-size: 30px;
+    width: 50%;
+    text-align: center;
+    margin: 30px 0px;
+}
+
+#heading button {
+    padding: 12px 32px;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    border-radius: 100px;
+}
+
+#illustration {
+    padding-top: 50px;
+    width: 100%;
+}
+
+#illustration h1 {
+    z-index: 2;
+}
+#illustration img {
+    position: relative;
+    width: 100%;
+}
+
+#details {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+    width: 100%;
+}
+
+#details #dleft {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 50px;
+    width: 48%;
+    border-right: 2px solid #000;
+}
+
+#details #dleft #smallline {
+    width: 15%;
+    height: 2px;
+    background-color: #000;
+    margin: 20px 0;
+}
+#dleft h1 {
+    text-align: right;
+    font-size: 40px;
+}
+#details #dleft p {
+    width: 70%;
+    text-align: right;
+    font-size: 22px;
+}
+
+#details #dright {
+    width: 48%;
+}
+
+#dright .feat {
+    display: flex;
+    gap: 20px;
+}
+
+.feat h3 {
+    font-size: 30px;
+}
+.feat p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    width: 60%;
+}
+
+.feat img {
+    width: 70px;
+    height: 60px;
+}
