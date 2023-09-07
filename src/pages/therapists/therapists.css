@@ -35,3 +35,26 @@
     border-radius: 5px;
     box-shadow: 1em 2em 2.5em rgba(1,2,68,0.0);
 }
+
+.container {
+    padding-top: 1em;
+    color: #110f29;
+}
+
+.container h5 {
+    font-weight: 500;
+}
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 720px){
+    .card {
+        max-width: 10em;
+        margin-top: 1em;
+    }
+    #therapists {
+        grid-template-columns: auto auto;
+        grid-column-gap: 0;
+    }
+}
