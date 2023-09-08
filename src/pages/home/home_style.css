@@ -95,7 +95,7 @@ html, body {
 }
 
 #illustration img {
-    position: relative;
+    /* position: absolute; */
     width: 100%;
 }
 
