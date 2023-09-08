@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Questrial');
 @import url('https://fonts.cdnfonts.com/css/playfair-display');
+*{
+    margin: 0;
+    padding: 1.5;
+    box-sizing: border-box;
+    font-family: "Questrial ";
+    background-color: #F6F6EE;
+}
+
 
 #search-container button {
     padding: 1em 2em;
@@ -9,14 +17,19 @@
     margin-top: 0.5em;
 }
 
+#buttons {
+    margin-left: 150px;
+}
 .button-value {
-    border: 2px solid #6759ff;
-    padding: 1em 2.2em;
-    border-radius: 3em;
-    background-color: transparent;
-    color: #6759ff;
-    cursor: pointer;
     margin-top: 10vh;
+    padding: 12px 32px;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    border-radius: 100px;
+    scale: 0.7;
+    /* display: table; */
+    
 }
 
 .active{
@@ -26,21 +39,30 @@
 
 #therapists {
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-column-gap: 1.5em;
+    grid-template-columns: 400px 400px 400px;
+    grid-column-gap: 1em;
     padding:2em 0;
 }
 
 .card{
-    background-color: #ffffff;
+    /* background-color: purple; */
     max-width: 18em;
-    margin-top: 1em;
-    padding: 1em;
+    margin-top: 5vh;
+    padding: 1em 1em;
     border-radius: 5px;
     box-shadow: 1em 2em 2.5em rgba(1,2,68,0.0);
+    margin-left: 21vh;
+    width: 15em;
+    /* border: 20px black; */
+    border-width: 1px 1x 1px 1px;
+    border-color: #74895f;
+    border-style: solid;
+    border-width: 3px;
+    
 }
 
 .container {
+    /* background-color: purple; */
     padding-top: 1em;
     color: #110f29;
 }
@@ -56,12 +78,13 @@
     .card {
         max-width: 10em;
         margin-top: 1em;
+        
     }
     #therapists {
         grid-template-columns: auto auto;
         grid-column-gap: 0;
     }
-
+}
     #nav {
         display: flex;
         justify-content: space-between;
@@ -88,4 +111,16 @@
         width: 280px;
         height: 130px;
     }
-}
+
+    #nav #links {
+        display: flex;
+        gap: 40px;
+    }
+    
+    #links a {
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 30px;
+        color: #987554;
+        font-family: 'Playfair Display';
+    }
